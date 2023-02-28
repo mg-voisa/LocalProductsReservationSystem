@@ -2,7 +2,7 @@
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/fmt" prefix="fmt"%>
 <%@taglib uri="http://www.springframework.org/tags" prefix="spring"%>
-
+<%@include file="pages/includes/path.jsp"%>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -19,7 +19,7 @@
           <h1>
             <span>Bine ați venit! </span>
           </h1>
-          <h2>Mâncarea conectează comunitățile și culturile</h2>
+          <h2>Produsele locale</h2>
           <div class="btns">
             <a href="#why-us" class="btn-menu animated fadeInUp scrollto">Promoții</a>
             <a href="#testimonials" class="btn-menu animated fadeInUp scrollto">Recenzii</a>
@@ -158,11 +158,11 @@
     <!-- End Gallery Section -->
   </main>
   <!-- End #main -->
-<!--   <?php -->
-<!--       include("footer/footer.php"); -->
-<!--   ?> -->
-<!--   <?php -->
-<!--       include("scripts.php"); -->
-<!--   ?> -->
+  
+      
+<%@include file="footer.jsp"%>
+<%@include file="scripts.jsp"%>
+      include("scripts.php");
+
 </body>
 </html>

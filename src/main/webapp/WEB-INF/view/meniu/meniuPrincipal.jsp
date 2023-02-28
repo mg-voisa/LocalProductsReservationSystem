@@ -3,7 +3,7 @@
   <div id="topbar" class="d-flex align-items-center fixed-top">
     <div class="container d-flex justify-content-center justify-content-md-between">
       <div class="contact-info d-flex align-items-center">
-        <i class="bi bi-clock d-flex align-items-center ms-4"><span> L-D: 12:00 - 22:00</span></i>
+        <i class="bi bi-clock d-flex align-items-center ms-4"><span> </span></i>
       </div>
     </div>
   </div>
@@ -11,7 +11,7 @@
 <header id="header" class="fixed-top d-flex align-items-cente">
 <div class="container-fluid container-xl d-flex align-items-center justify-content-lg-between">
 
-  <h1 class="logo me-auto me-lg-0"><a href="index.php">CANTINA STUDENȚILOR</a></h1>
+  <h1 class="logo me-auto me-lg-0"><a href="index.php">Marketplace online de produse locale</a></h1>
   <nav id="navbar" class="navbar order-last order-lg-0">
     <ul>
        <li><a class="nav-link scrollto " href="#">item_01</a></li>
