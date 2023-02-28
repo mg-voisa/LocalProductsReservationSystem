@@ -162,7 +162,6 @@
       
 <%@include file="footer.jsp"%>
 <%@include file="scripts.jsp"%>
-      include("scripts.php");
 
 </body>
 </html>
