@@ -2,7 +2,7 @@
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/fmt" prefix="fmt"%>
 <%@taglib uri="http://www.springframework.org/tags" prefix="spring"%>
-
+<%@include file="pages/includes/path.jsp"%>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -19,7 +19,7 @@
           <h1>
             <span>Bine ați venit! </span>
           </h1>
-          <h2>Mâncarea conectează comunitățile și culturile</h2>
+          <h2>Produsele locale</h2>
           <div class="btns">
             <a href="#why-us" class="btn-menu animated fadeInUp scrollto">Promoții</a>
             <a href="#testimonials" class="btn-menu animated fadeInUp scrollto">Recenzii</a>
@@ -98,57 +98,57 @@
         <div class="row g-0">
           <div class="col-lg-3 col-md-4">
             <div class="gallery-item">
-              <a href="assets/img/gallery/gallery-1.jpg" class="gallery-lightbox" data-gall="gallery-item">
-                <img src="assets/img/gallery/gallery-1.jpg" alt="" class="img-fluid">
+              <a href="https://www.localeat.org/wp-content/uploads/2020/11/Definirproduitlocal.jpg" class="gallery-lightbox" data-gall="gallery-item">
+                <img src="https://www.localeat.org/wp-content/uploads/2020/11/Definirproduitlocal.jpg" alt="" class="img-fluid">
               </a>
             </div>
           </div>
           <div class="col-lg-3 col-md-4">
             <div class="gallery-item">
-              <a href="assets/img/gallery/gallery-2.jpg" class="gallery-lightbox" data-gall="gallery-item">
-                <img src="assets/img/gallery/gallery-2.jpg" alt="" class="img-fluid">
+              <a href="https://www.localeat.org/wp-content/uploads/2020/11/Definirproduitlocal.jpg" class="gallery-lightbox" data-gall="gallery-item">
+                <img src="https://www.localeat.org/wp-content/uploads/2020/11/Definirproduitlocal.jpg" alt="" class="img-fluid">
               </a>
             </div>
           </div>
           <div class="col-lg-3 col-md-4">
             <div class="gallery-item">
-              <a href="assets/img/gallery/gallery-3.jpg" class="gallery-lightbox" data-gall="gallery-item">
-                <img src="assets/img/gallery/gallery-3.jpg" alt="" class="img-fluid">
+              <a href="https://www.localeat.org/wp-content/uploads/2020/11/Definirproduitlocal.jpg" class="gallery-lightbox" data-gall="gallery-item">
+                <img src="https://www.localeat.org/wp-content/uploads/2020/11/Definirproduitlocal.jpg" alt="" class="img-fluid">
               </a>
             </div>
           </div>
           <div class="col-lg-3 col-md-4">
             <div class="gallery-item">
-              <a href="assets/img/gallery/gallery-4.jpg" class="gallery-lightbox" data-gall="gallery-item">
-                <img src="assets/img/gallery/gallery-4.jpg" alt="" class="img-fluid">
+              <a href="https://www.localeat.org/wp-content/uploads/2020/11/Definirproduitlocal.jpg" class="gallery-lightbox" data-gall="gallery-item">
+                <img src="https://www.localeat.org/wp-content/uploads/2020/11/Definirproduitlocal.jpg" alt="" class="img-fluid">
               </a>
             </div>
           </div>
           <div class="col-lg-3 col-md-4">
             <div class="gallery-item">
-              <a href="assets/img/gallery/gallery-5.jpg" class="gallery-lightbox" data-gall="gallery-item">
-                <img src="assets/img/gallery/gallery-5.jpg" alt="" class="img-fluid">
+              <a href="https://www.localeat.org/wp-content/uploads/2020/11/Definirproduitlocal.jpg" class="gallery-lightbox" data-gall="gallery-item">
+                <img src="https://www.localeat.org/wp-content/uploads/2020/11/Definirproduitlocal.jpg" alt="" class="img-fluid">
               </a>
             </div>
           </div>
           <div class="col-lg-3 col-md-4">
             <div class="gallery-item">
-              <a href="assets/img/gallery/gallery-6.jpg" class="gallery-lightbox" data-gall="gallery-item">
-                <img src="assets/img/gallery/gallery-6.jpg" alt="" class="img-fluid">
+              <a href="https://www.localeat.org/wp-content/uploads/2020/11/Definirproduitlocal.jpg" class="gallery-lightbox" data-gall="gallery-item">
+                <img src="https://www.localeat.org/wp-content/uploads/2020/11/Definirproduitlocal.jpg" alt="" class="img-fluid">
               </a>
             </div>
           </div>
           <div class="col-lg-3 col-md-4">
             <div class="gallery-item">
-              <a href="assets/img/gallery/gallery-7.jpg" class="gallery-lightbox" data-gall="gallery-item">
-                <img src="assets/img/gallery/gallery-7.jpg" alt="" class="img-fluid">
+              <a href="https://www.localeat.org/wp-content/uploads/2020/11/Definirproduitlocal.jpg" class="gallery-lightbox" data-gall="gallery-item">
+                <img src="https://www.localeat.org/wp-content/uploads/2020/11/Definirproduitlocal.jpg" alt="" class="img-fluid">
               </a>
             </div>
           </div>
           <div class="col-lg-3 col-md-4">
             <div class="gallery-item">
-              <a href="assets/img/gallery/gallery-8.jpg" class="gallery-lightbox" data-gall="gallery-item">
-                <img src="assets/img/gallery/gallery-8.jpg" alt="" class="img-fluid">
+              <a href="https://www.localeat.org/wp-content/uploads/2020/11/Definirproduitlocal.jpg" class="gallery-lightbox" data-gall="gallery-item">
+                <img src="https://www.localeat.org/wp-content/uploads/2020/11/Definirproduitlocal.jpg" alt="" class="img-fluid">
               </a>
             </div>
           </div>
@@ -158,11 +158,10 @@
     <!-- End Gallery Section -->
   </main>
   <!-- End #main -->
-  <?php
-      include("footer/footer.php");
-  ?>
-  <?php
-      include("scripts.php");
-  ?>
+  
+      
+<%@include file="footer.jsp"%>
+<%@include file="scripts.jsp"%>
+
 </body>
 </html>
