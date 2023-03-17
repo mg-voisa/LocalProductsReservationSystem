@@ -23,4 +23,9 @@ public class BookingController {
     public String index(Model model) {
     	return "index";
     }
+    @GetMapping("/meniu")
+    public String meniu(Model model) {
+    	model.addAttribute("products", bookingService.getListProducts());
+    	return "meniu";
+    }
 }
