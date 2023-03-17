@@ -17,7 +17,10 @@ public class BookingController {
     public String viewBooks(Model model) {
         model.addAttribute("products", bookingService.getListProducts());
         
-    	
-    	return "view-products";
+        return "view-products";
+    }
+    @GetMapping("/index")
+    public String index(Model model) {
+    	return "index";
     }
 }
