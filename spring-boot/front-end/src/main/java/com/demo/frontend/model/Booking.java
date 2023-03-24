@@ -1,4 +1,4 @@
-package com.demo.frontend;
+package com.demo.frontend.model;
 
 public class Booking {
     private String id;

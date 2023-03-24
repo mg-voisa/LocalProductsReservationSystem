@@ -1,4 +1,4 @@
-package com.demo.frontend;
+package com.demo.frontend.service;
 
 import java.util.ArrayList;
 import java.util.HashMap;
