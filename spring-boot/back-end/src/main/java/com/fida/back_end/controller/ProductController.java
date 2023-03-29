@@ -17,13 +17,13 @@ import com.fida.back_end.entity.Product;
 import com.fida.back_end.service.ProductService;
 
 @RestController
-@RequestMapping("/back-end")
+@RequestMapping("/products")
 public class ProductController {
 	// Annotation
     @Autowired private ProductService productService;
     
  // Save operation
-    @PostMapping("/products")
+    @PostMapping("/adauga")
     public Product adauga(@Validated @RequestBody Product product)
     {
     	System.out.println("product:"+product);
@@ -31,7 +31,7 @@ public class ProductController {
     }
   
     // Read operation
-    @GetMapping("/products")
+    @GetMapping("/vezi")
     public List<Product> vezi()
     {
   
@@ -39,9 +39,9 @@ public class ProductController {
     }
   
     // Update operation
-    @PutMapping("/products/{id}")
+    @PutMapping("/update/{id}")
     public Product
-    updateDepartment(@RequestBody Product product,
+    updateProduct(@RequestBody Product product,
                      @PathVariable("id") Long productId)
     {
   
@@ -50,7 +50,7 @@ public class ProductController {
     }
   
     // Delete operation
-    @DeleteMapping("/products/{id}")
+    @DeleteMapping("/sterge/{id}")
     public String sterge(@PathVariable("id") Long productId)
     {
   
