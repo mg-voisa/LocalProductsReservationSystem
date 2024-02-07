@@ -9,6 +9,8 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.Table;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
+
 @Entity
 @Table(name = "utilizatori")
 public class User {
@@ -27,6 +29,7 @@ public class User {
 	private String email;
 	
 	@Column(name = "parola")
+	@JsonIgnore
 	private String parola;
 
 
@@ -127,7 +130,7 @@ public class User {
 
 	@Override
 	public String toString() {
-		return "User [id=" + id + ", nume=" + nume + ", prenume=" + prenume + ", email=" + email + ", parola=" + parola
+		return "User [id=" + id + ", nume=" + nume + ", prenume=" + prenume + ", email=" + email 
 				+ ", tip=" + tip + ", created_at=" + created_at + "]";
 	}
 	

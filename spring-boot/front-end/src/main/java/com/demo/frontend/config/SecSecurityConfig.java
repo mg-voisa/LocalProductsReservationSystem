@@ -12,6 +12,7 @@ import org.springframework.security.provisioning.InMemoryUserDetailsManager;
 import org.springframework.security.web.SecurityFilterChain;
 import org.springframework.security.web.authentication.AuthenticationFailureHandler;
 import org.springframework.security.web.authentication.logout.LogoutSuccessHandler;
+import org.springframework.security.web.util.matcher.AntPathRequestMatcher;
 
 @Configuration
 @EnableWebSecurity
@@ -40,23 +41,27 @@ public class SecSecurityConfig {
         return new BCryptPasswordEncoder(); 
     }
 
-//    @Bean
-//    public SecurityFilterChain filterChain(HttpSecurity http) throws Exception {
-//        // http builder configurations for authorize requests and form login (see below)
-//    	http.csrf()
-//        .disable()
-//        .authorizeRequests()
-//        .antMatchers("/admin/**")
-//        .hasRole("ADMIN")
-//        .antMatchers("/anonymous*")
-//        .anonymous()
-//        .antMatchers("/login*")
-//        .permitAll()
-//        .anyRequest()
-//        .authenticated();
-//    	
-//    	return http.build();
-//    }
+    @Bean
+    public SecurityFilterChain filterChain(HttpSecurity http) throws Exception {
+       
+    	 http
+         .authorizeRequests()
+         .antMatchers("/").permitAll() // This will be your home screen URL
+         .antMatchers("/resources/css/**").permitAll()
+         .antMatchers("/resources/js/**").permitAll()
+         .antMatchers("/resources/img/**").permitAll()
+         .antMatchers("/resources/fonts/**").permitAll()
+         .antMatchers("/resources/json/**").permitAll()
+         .anyRequest().authenticated()
+         .and()
+         .formLogin()
+         .defaultSuccessUrl("/postloginscreen") //configure screen after login success
+         .loginPage("/login")
+         .permitAll()
+         .and()
+         .logout().logoutRequestMatcher(new AntPathRequestMatcher("/logout")).logoutSuccessUrl("/login").permitAll();
+	return http.build();
+    }
 //
 //	private LogoutSuccessHandler logoutSuccessHandler() {
 //		// TODO Auto-generated method stub
